@@ -1004,3 +1004,24 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+
+/*
+FOOTER
+*/
+.site-footer {
+	position: fixed;
+	bottom: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #000;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+
+}
+
+.site-footer a{
+	color: #fff;
+	text-decoration: none;
+}
