@@ -37,7 +37,7 @@
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bro' ),
 				'after'  => '</div>',
-			) );
+			) );home-page
 		?>
 	</div><!-- .entry-content -->
 

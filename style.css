@@ -902,6 +902,8 @@ a:active {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+
+
 #secondary {
     position: relative;
     padding: 1.8em 1.4em 0;
@@ -920,16 +922,22 @@ a:active {
     flex-wrap: wrap;
     justify-content: center;
     padding: 1.8em;
-     
+
  }
-    
- .widget{
-     float: left;
-     width: 300px;
-     margin: 0 .9em 1.8em;
-    
- }
-    
+
+	.primary-mastHead, .widget{
+		display: block;
+		flex-wrap: none;
+		width: 100%;
+	}
+
+ /*#secondary, .widget{*/
+     /*float: left;*/
+     /*width: 300px;*/
+     /*margin: 0 .9em 1.8em;*/
+
+ /*}*/
+
 }
 
 widget-title {

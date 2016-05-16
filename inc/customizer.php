@@ -14,8 +14,17 @@ function bro_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-    
-    
+
+
+//  CUSTOM SECTIONS
+
+
+    $wp_customize->add_section('footer', array(
+       'title' => 'Footer',
+        'priority' => 10000,
+        'description' => 'Customize footer stuff in here'
+    ));
+
 //    CUSTOM SETTINGS
     
     $wp_customize->add_setting('header_color', array(
@@ -33,7 +42,7 @@ function bro_customize_register( $wp_customize ) {
             $wp_customize,
             'header_color', array(
                 'label' => __('Header Background Color', 'BRO'),
-                'section' => 'colors',
+                'section' => 'footer',
             )
         )   
         
