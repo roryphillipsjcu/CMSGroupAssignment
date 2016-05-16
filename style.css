@@ -258,6 +258,17 @@ th {
 	padding: 0;
 }
 
+.site-content {
+   margin-left: 20%;
+    margin-right: 20%;
+    position:relative;
+       
+}
+#content {
+
+
+}
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -886,7 +897,15 @@ a:active {
 --------------------------------------------------------------*/
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
-	display: none;
+
+
+}
+
+aside {
+         float: right;
+/* width: 260px;*/
+ margin-left: 260;
+position:relative;
 }
 
 /*--------------------------------------------------------------
@@ -1010,7 +1029,7 @@ object {
 FOOTER
 */
 .site-footer {
-	position: fixed;
+/*	position: fixed;*/
 	bottom: 0px;
 	margin-right: auto;
 	margin-left: auto;
