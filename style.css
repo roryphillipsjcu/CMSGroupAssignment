@@ -57,6 +57,70 @@ body {
 	margin: 0;
 }
 
+
+@media screen and (min-width: 65em){
+    .sidebar-right .content-area{
+        float:left;
+        width: calc(100% -306px);
+    
+    }
+    
+    .sidebar-right #secondary{
+        margin: 0;   
+    }
+    
+    .sidebar-right .site-content .widget-area {
+        float: right;
+        overflow: hidden;
+        width: 17em;
+        padding: 0 1.5em;
+        border-left: 1px solid #ededed;
+    }
+    
+    
+    .sidebar-left .content-area{
+        float:right;
+        width: calc(100% -306px);
+    
+    }
+    
+    .sidebar-left #secondary{
+        margin: 0;   
+        
+    }
+    
+    .sidebar-left .site-content .widget-area {
+        float: left;
+        overflow: hidden;
+        width: 17em;
+        padding: 0 1.5em;
+        border-right: 1px solid #ededed;
+    }
+    
+    
+    .sidebar-right #secondary, 
+    .sidebar-left #secondary {
+        background-color: #fff;
+        padding: 1.8em 0 0;
+        margin: 0;
+    }
+    
+    .sidebar-right .widget,
+    .sidebar-left .widget {
+        padding: 0 1.8em;
+        margin-bottom: 0;
+    }
+    
+    .sidebar-right .widget::after,
+    .sidebar-left .widget::after{
+        display: block;
+        width: 33%;
+        margin: 4em auto;
+        content: "";
+        border-bottom: 1px solid #c3c3c3;
+    }
+}
+
 article,
 aside,
 details,
@@ -898,8 +962,10 @@ widget-title {
 --------------------------------------------------------------*/
 .site-content {
     margin-left: 20%;
-    margin-right: 20%;
-    display: inline-block;
+
+}
+.content-area{
+ width: 75%;   
 }
 
 /*--------------------------------------------------------------
