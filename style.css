@@ -258,16 +258,6 @@ th {
 	padding: 0;
 }
 
-.site-content {
-   margin-left: 20%;
-    margin-right: 20%;
-    position:relative;
-       
-}
-#content {
-
-
-}
 
 /*--------------------------------------------------------------
 # Typography
@@ -848,10 +838,56 @@ a:active {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+#secondary {
+    position: relative;
+    padding: 1.8em 1.4em 0;
+    background-color: #ededed;
+    
+}
 .widget {
 	margin: 0 0 1.5em;
+    padding: 1.8em;
+    background: #fff;
 }
 
+@media screen and (min-width: 45em){
+ #secondary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.8em;
+     
+ }
+    
+ .widget{
+     float: left;
+     width: 300px;
+     margin: 0 .9em 1.8em;
+    
+ }
+    
+}
+
+widget-title {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-size: 1em;
+    text-transform: uppercase;
+    
+}
+
+.widget ul, .widget ol{
+    padding: .7em 0 0;
+    margin: 0;
+    font-family: "Fira Sans", sans-serif;
+    list-style-type: none;
+
+}
+
+.site-content . widget li {
+    display: block;
+    padding .3em 0;
+}
 /* Make sure select elements fit in widgets. */
 .widget select {
 	max-width: 100%;
@@ -860,6 +896,12 @@ a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.site-content {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: inline-block;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -869,22 +911,27 @@ a:active {
 
 .hentry {
 	margin: 0 0 1.5em;
+    float:left;
+    display: inline-block;
+
 }
 
 .byline,
 .updated:not(.published) {
-	display: none;
+	display: inline-block;
 }
 
 .single .byline,
 .group-blog .byline {
-	display: inline;
+	display: inline-block;
 }
 
 .page-content,
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+    float: left;
+
 }
 
 .page-links {
@@ -897,16 +944,9 @@ a:active {
 --------------------------------------------------------------*/
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
-
-
+    display: none;
 }
 
-aside {
-         float: right;
-/* width: 260px;*/
- margin-left: 260;
-position:relative;
-}
 
 /*--------------------------------------------------------------
 ## Comments
