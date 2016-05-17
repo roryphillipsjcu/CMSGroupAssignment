@@ -880,7 +880,7 @@ a:active {
 /*    right: -1em;*/
     display: block;
     width: 4em;
-    height 2em;
+    height: 3.3em;
     background: black;
     border: 2px solid white;
     color: white;
@@ -889,7 +889,7 @@ a:active {
 
 .site-cta a:hover,
 .site-cta a:focus {
-    outline: 2px solid white;   
+    outline: 4px solid orange;
 }
 
 .site-firstletter{
@@ -1015,6 +1015,17 @@ widget-title {
  width: 75%;   
 }
 
+/*About us front page*/
+.aboutusHeader{
+	text-align: center;
+	font-family: "Fira Sans", sans-serif;
+	font-height: 26px;
+	font-size: 32px;
+}
+.site-aboutusDesc{
+	text-align:center;
+
+}
 /*Front static page */
 .mastHeadImage {
 	width: 100%;
@@ -1038,9 +1049,10 @@ widget-title {
 	color: orange;
 
 }
-.site-cta a:hover,
-.site-cta a:focus {
+.mastHeadContainer a:hover,
+.mastHeadContainer a:focus {
 	outline: 2px solid white;
+	background: white;
 
 }
 /*--------------------------------------------------------------
