@@ -632,6 +632,7 @@ a:active {
 .main-navigation {
 	font-family: 'Fira Sans', sans-serif;
 	margin: 20px;
+
 }
 
 .site-footer .main-navigation {
@@ -665,6 +666,7 @@ a:active {
 	background-color: #fff;
 
 }
+
 
 .main-navigation .current-menu-item > a,
 .main-navigation .current-menu-ancestor > a {
@@ -865,11 +867,48 @@ a:active {
 # Header
 --------------------------------------------------------------*/
 
+.site-cta{
+ position: fixed;
+    
+}
+
+.site-cta a{
+    position: absolute;
+    z-index: 1000000000000000;
+    top: 1em;
+    left: 100em;
+/*    right: -1em;*/
+    display: block;
+    width: 4em;
+    height 2em;
+    background: black;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+}
+
+.site-cta a:hover,
+.site-cta a:focus {
+    outline: 2px solid white;   
+}
+
+.site-firstletter{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+.site-cta a:hover .site-firstletter,
+.site-cta a:focus .site-firstletter{
+    background: white;
+    color: black;
+}
 .site-header{
 	background-color: #000;
 	background-size: cover;
 	/*opacity: 0.5;*/
-
 }
 
 
@@ -976,6 +1015,34 @@ widget-title {
  width: 75%;   
 }
 
+/*Front static page */
+.mastHeadImage {
+	width: 100%;
+	height: 480px;
+}
+
+.mastHeadContainer a {
+	position: absolute;
+	z-index: 1000000000000000;
+	top: 30em;
+	left: 56em;
+	/*    right: -1em;*/
+	display: block;
+	width: 8em;
+	height: 3em;
+	background: black;
+	border: 4px solid orange;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	color: orange;
+
+}
+.site-cta a:hover,
+.site-cta a:focus {
+	outline: 2px solid white;
+
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

@@ -5,8 +5,21 @@
  *
  */
 
+ ?>
 
-    get_header(); ?>
+    <div class="site-cta">
+        <?php $site_title = get_bloginfo ('name'); ?>
+        <a href= <?php echo get_theme_mod('calltoaction_url'); ?> rel="home">
+            <div class="site-firstletter" aria-hidden="true">
+                <?php echo get_theme_mod('calltoaction_text'); ?>
+            </div>
+        </a>
+    </div>
+
+
+
+
+    <?php get_header(); ?>
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
@@ -15,6 +28,22 @@
                     <?php dynamic_sidebar( 'mastHeadCTA' ); ?>
                 </div><!-- #primary-sidebar -->
             <?php endif; ?>
+
+
+            <!--Mast head cta (with img-->
+            <img class="mastHeadImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Cat_pic.jpg/220px-Indian_Cat_pic.jpg">
+            <div class="mastHeadContainer">
+                <a href="google.com">
+                    <div class="site-firstletter">
+                        Join Now!
+                    </div>
+                </a>
+            </div>
+
+
+
+
+
 
             <?php
 
