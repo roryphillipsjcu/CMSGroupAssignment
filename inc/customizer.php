@@ -82,7 +82,18 @@ function bro_customize_register( $wp_customize ) {
         'type' => 'theme_mod',
         'transport' => 'postMessage'
     ));
-    
+
+    $wp_customize->add_setting('homepage_aboutsection_title', array(
+        'default' => 'About Us',
+        'type' => 'theme_mod',
+        'transport' => 'postMessage'
+    ));
+
+    $wp_customize->add_setting('homepage_aboutsection_description', array(
+        'default' => 'blahblahblah',
+        'type' => 'theme_mod',
+        'transport' => 'postMessage'
+    ));
 //add controlls (in customiser)
     
     $wp_customize->add_control(
@@ -147,6 +158,26 @@ function bro_customize_register( $wp_customize ) {
             )
         )
     );
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'homepage_aboutsection_title', array(
+                'label' => __('About Section Title', 'BRO'),
+                'section' => 'statichome'
+            )
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            'homepage_aboutsection_description', array(
+                'label' => __('About Section Description', 'BRO'),
+                'section' => 'statichome',
+                'type' => 'textarea'
+            )
+        )
+    )
 
 }
 add_action( 'customize_register', 'bro_customize_register' );

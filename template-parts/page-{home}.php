@@ -43,8 +43,8 @@
 
 
             <div class="site-aboutus">
-                <h2 class="aboutusHeader">About us</h2>
-                <p class="site-aboutusDesc"> Words that need to be styled in a nice fashion aWords that need to be styled in a nice fashion aWords that need to be styled in a nice fashion aWords that need to be styled in a nice fashion aWords that need to be styled in a nice fashion aWords that need to be styled in a nice fashion aWords that need to be styled in a nice fashion aWords that need to be styled in a nice fashion aWords that need to be styled in a nice fashion aWords that need to be styled in a nice fashion aWords that need to be styled in a nice fashion aWords that need to be styled in a nice fashion aWords that need to be styled in a nice fashion aWords that need to be styled in a nice fashion aWords that need to be styled in a nice fashion a </p>
+                <h2 class="aboutusHeader"><?php echo get_theme_mod('homepage_aboutsection_title'); ?></h2>
+                <p class="site-aboutusDesc"><?php echo get_theme_mod('homepage_aboutsection_description'); ?></p>
             </div>
 
 

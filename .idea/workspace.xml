@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="934242f4-1914-470a-b992-ad2cae62fc4c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/customizer.php" afterPath="$PROJECT_DIR$/inc/customizer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-parts/page-{home}.php" afterPath="$PROJECT_DIR$/template-parts/page-{home}.php" />
     </list>
     <ignored path="CMS BS.iws" />
@@ -29,8 +31,8 @@
           <file leaf-file-name="customizer.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/inc/customizer.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.07589286">
-                  <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
+                <state vertical-scroll-proportion="0.45535713">
+                  <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -63,8 +65,8 @@
           <file leaf-file-name="customizer.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/inc/customizer.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-15.769231">
-                  <caret line="147" column="9" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
+                <state vertical-scroll-proportion="-10.307693">
+                  <caret line="188" column="35" selection-start-line="188" selection-start-column="35" selection-end-line="188" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -73,11 +75,12 @@
           <file leaf-file-name="page-{home}.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/template-parts/page-{home}.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3245033">
-                  <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+                <state vertical-scroll-proportion="0.54966885">
+                  <caret line="46" column="103" selection-start-line="46" selection-start-column="103" selection-end-line="46" selection-end-column="103" />
                   <folding>
-                    <marker date="1463451074133" expanded="true" signature="1203:1313" placeholder="..." />
-                    <marker date="1463451074133" expanded="true" signature="1549:1680" placeholder="..." />
+                    <element signature="e#6#64#0#PHP" expanded="true" />
+                    <marker date="1463452268278" expanded="true" signature="1203:1313" placeholder="..." />
+                    <marker date="1463452268278" expanded="true" signature="1828:1959" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -307,8 +310,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <marker date="1463451074133" expanded="true" signature="1203:1313" placeholder="..." />
-            <marker date="1463451074133" expanded="true" signature="1549:1680" placeholder="..." />
+            <element signature="e#6#64#0#PHP" expanded="true" />
+            <marker date="1463452268278" expanded="true" signature="1203:1313" placeholder="..." />
+            <marker date="1463452268278" expanded="true" signature="1828:1959" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -331,19 +335,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/customizer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.769231">
-          <caret line="147" column="9" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
+        <state vertical-scroll-proportion="-10.307693">
+          <caret line="188" column="35" selection-start-line="188" selection-start-column="35" selection-end-line="188" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template-parts/page-{home}.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3245033">
-          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.54966885">
+          <caret line="46" column="103" selection-start-line="46" selection-start-column="103" selection-end-line="46" selection-end-column="103" />
           <folding>
-            <marker date="1463451074133" expanded="true" signature="1203:1313" placeholder="..." />
-            <marker date="1463451074133" expanded="true" signature="1549:1680" placeholder="..." />
+            <element signature="e#6#64#0#PHP" expanded="true" />
+            <marker date="1463452268278" expanded="true" signature="1203:1313" placeholder="..." />
+            <marker date="1463452268278" expanded="true" signature="1828:1959" placeholder="..." />
           </folding>
         </state>
       </provider>
