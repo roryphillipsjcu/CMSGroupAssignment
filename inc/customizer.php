@@ -25,6 +25,12 @@ function bro_customize_register( $wp_customize ) {
         'description' => 'Customize footer stuff in here'
     ));
 
+    $wp_customize->add_section('cta', array(
+        'title' => 'Calls to Action',
+        'priority' => 10,
+        'description' => 'Modify the call to action information'
+    ));
+
 //    CUSTOM SETTINGS
     
     $wp_customize->add_setting('header_color', array(
@@ -33,6 +39,18 @@ function bro_customize_register( $wp_customize ) {
         'sanitize_callback' => 'sanitize_hex_color',
         'transport' => 'postMessage'
         
+    ));
+
+    $wp_customize->add_setting('calltoaction_text', array(
+        'default' => 'Book Now',
+        'type' => 'theme_mod',
+        'transport' => 'postMessage'
+    ));
+
+    $wp_customize->add_setting('calltoaction_url', array(
+        'default' => 'https://whatson.townsville.qld.gov.au/categories/ticketshop',
+        'type' => 'theme_mod',
+        'transport' => 'postMessage'
     ));
     
 //add controlls (in customiser)
@@ -47,6 +65,27 @@ function bro_customize_register( $wp_customize ) {
         )   
         
     );
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'calltoaction_text', array (
+                'label' => __('Call To Action Text', 'BRO'),
+                'section' => 'cta',
+            )
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'calltoaction_url', array (
+                'label' => __('Call To Action URL', 'BRO'),
+                'section' => 'cta',
+            )
+        )
+    );
+
 }
 add_action( 'customize_register', 'bro_customize_register' );
 

@@ -29,12 +29,11 @@
 		<header id="masthead" class="site-header" role="banner">
 	<?php } ?>
 
-            
     <div class="site-cta">
         <?php $site_title = get_bloginfo ('name'); ?>
-        <a href= "https://whatson.townsville.qld.gov.au/categories/ticketshop" rel="home">
+        <a href= <?php echo get_theme_mod('calltoaction_url'); ?> rel="home">
             <div class="site-firstletter" aria-hidden="true">
-                Book Now
+				<?php echo get_theme_mod('calltoaction_text'); ?>
             </div>
         </a>
     </div>
