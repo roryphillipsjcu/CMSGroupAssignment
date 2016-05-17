@@ -31,11 +31,11 @@
 
 
             <!--Mast head cta (with img-->
-            <img class="mastHeadImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Cat_pic.jpg/220px-Indian_Cat_pic.jpg">
+            <img class="mastHeadImage" src=<?php echo get_theme_mod('homepage_masthead_image');?>>
             <div class="mastHeadContainer">
-                <a href="google.com">
+                <a href=<?php echo get_theme_mod('homepage_calltoaction_url');?>>
                     <div class="site-firstletter">
-                        Join Now!
+                        <?php echo get_theme_mod('homepage_calltoaction_title');?>
                     </div>
                 </a>
             </div>

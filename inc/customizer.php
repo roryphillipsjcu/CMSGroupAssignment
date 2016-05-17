@@ -31,8 +31,16 @@ function bro_customize_register( $wp_customize ) {
         'description' => 'Modify the call to action information'
     ));
 
+    $wp_customize->add_section('statichome', array(
+        'title' => 'Home Page Content',
+        'priority' => 1,
+        'description' => 'Used for the home page'
+    ));
+
 //    CUSTOM SETTINGS
-    
+
+    // --- DEFAULT SETTINGS ---
+
     $wp_customize->add_setting('header_color', array(
         'default' => '#000000',
         'type' => 'theme_mod',
@@ -40,6 +48,8 @@ function bro_customize_register( $wp_customize ) {
         'transport' => 'postMessage'
         
     ));
+
+    // --- CALL TO ACTION SETTINGS ---
 
     $wp_customize->add_setting('calltoaction_text', array(
         'default' => 'Book Now',
@@ -49,6 +59,26 @@ function bro_customize_register( $wp_customize ) {
 
     $wp_customize->add_setting('calltoaction_url', array(
         'default' => 'https://whatson.townsville.qld.gov.au/categories/ticketshop',
+        'type' => 'theme_mod',
+        'transport' => 'postMessage'
+    ));
+
+    // --- STATIC PAGE SETTINGS ---
+
+    $wp_customize->add_setting('homepage_masthead_image', array(
+        'default' => '',
+        'type' => 'theme_mod',
+        'transport' => 'postMessage'
+    ));
+
+    $wp_customize->add_setting('homepage_calltoaction_title', array(
+        'default' => 'Become a Member Now',
+        'type' => 'theme_mod',
+        'transport' => 'postMessage'
+    ));
+
+    $wp_customize->add_setting('homepage_calltoaction_url', array(
+        'default' => 'http://www.google.com',
         'type' => 'theme_mod',
         'transport' => 'postMessage'
     ));
@@ -66,6 +96,8 @@ function bro_customize_register( $wp_customize ) {
         
     );
 
+    // --- CALL TO ACTION CONTROLS ---
+
     $wp_customize->add_control(
         new WP_Customize_Control(
             $wp_customize,
@@ -82,6 +114,36 @@ function bro_customize_register( $wp_customize ) {
             'calltoaction_url', array (
                 'label' => __('Call To Action URL', 'BRO'),
                 'section' => 'cta',
+            )
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'homepage_masthead_image', array(
+                'label' => __('Masthead Background Image', 'BRO'),
+                'section' => 'statichome'
+            )
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'homepage_calltoaction_title', array(
+                'label' => __('Masthead Call to Action Title', 'BRO'),
+                'section' => 'statichome'
+            )
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'homepage_calltoaction_url', array(
+                'label' => __('Masthead Call to Action URL', 'BRO'),
+                'section' => 'statichome'
             )
         )
     );
