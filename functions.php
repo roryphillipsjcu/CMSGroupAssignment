@@ -99,14 +99,25 @@ add_action( 'after_setup_theme', 'bro_content_width', 0 );
  */
 function bro_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'mastHeadCTA', 'bro' ),
+		'name'          => esc_html__( 'newsWidgetArea', 'bro' ),
 		'id'            => 'mastHeadCTA',
-		'description'   => esc_html__( 'Add CTA widgets here.', 'bro' ),
+		'description'   => esc_html__( 'Add news widgets here.', 'bro' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'peopleWidgetArea', 'bro' ),
+		'id'            => 'peopleWidgetArea',
+		'description'   => esc_html__( 'Add People widgets here.', 'bro' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
 
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'bro' ),
