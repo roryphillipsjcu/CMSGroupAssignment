@@ -94,6 +94,12 @@ function bro_customize_register( $wp_customize ) {
         'type' => 'theme_mod',
         'transport' => 'postMessage'
     ));
+
+    $wp_customize->add_setting('homepage_news_title', array(
+        'default' => 'News',
+        'type' => 'theme_mod',
+        'transport' => 'postMessage'
+    ));
 //add controlls (in customiser)
     
     $wp_customize->add_control(
@@ -171,18 +177,29 @@ function bro_customize_register( $wp_customize ) {
 
     $wp_customize->add_control(
         new WP_Customize_Control(
+            $wp_customize,
             'homepage_aboutsection_description', array(
                 'label' => __('About Section Description', 'BRO'),
                 'section' => 'statichome',
                 'type' => 'textarea'
             )
         )
-    )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'homepage_news_title', array(
+                'label' => __('News Section Title', 'BRO'),
+                'section' => 'statichome'
+            )
+        )
+    );
 
 }
 add_action( 'customize_register', 'bro_customize_register' );
 
-/**
+/**1
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function bro_customize_preview_js() {
