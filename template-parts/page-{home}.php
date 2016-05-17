@@ -31,6 +31,7 @@
 
 
             <!--Mast head cta (with img-->
+            <!-- Linked to customizer -->
             <img class="mastHeadImage" src=<?php echo get_theme_mod('homepage_masthead_image');?>>
             <div class="mastHeadContainer">
                 <a href=<?php echo get_theme_mod('homepage_calltoaction_url');?>>
