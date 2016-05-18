@@ -29,22 +29,16 @@
 		<header id="masthead" class="site-header" role="banner">
 	<?php } ?>
 
-    <div class="site-cta">
-        <?php $site_title = get_bloginfo ('name'); ?>
-        <a href= <?php echo get_theme_mod('calltoaction_url'); ?> rel="home">
-            <div class="site-firstletter" aria-hidden="true">
-				<?php echo get_theme_mod('calltoaction_text'); ?>
-            </div>
-        </a>
-    </div>
-
-
 		<div class="site-branding" <?php if ( is_singular() ) { echo ' screen-reader-text'; } ?>">
+
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<p class="site-title">
+<!--					<img src="">-->
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				</p>
 			<?php
 			endif;
 			$description = get_bloginfo( 'description', 'display' );

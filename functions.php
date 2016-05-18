@@ -7,6 +7,10 @@
  * @package BarrierReefOrchestra
  */
 
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M' );
+@ini_set( 'max_execution_time', '300' );
+
 if ( ! function_exists( 'bro_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -171,3 +175,7 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+
+
