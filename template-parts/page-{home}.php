@@ -63,28 +63,24 @@
 
     <!--Mast head cta (with img-->
     <!-- Linked to customizer -->
-    <img class="mastHeadImage" src=<?php echo get_theme_mod('homepage_masthead_image');?>>
-    <div class="mastHeadContainer">
-        <div class="frontpagetitleContainer">
-            <h1 class="frontpagetitle">Barrier Reef Orchestra</h1>
-        </div>
 
-        <a href=<?php echo get_theme_mod('homepage_calltoaction_url');?>>
-            <div class="site-firstletter">
-                <?php echo get_theme_mod('homepage_calltoaction_title');?>
-            </div>
-        </a>
+    <div class="mastHeadContainer">
+        <img class="mastHeadImage" src=<?php echo get_theme_mod('homepage_masthead_image');?>>
+        <div class="frontpagetitleContainer">
+            <h1 class="frontpagetitle"><?php bloginfo( 'name' ); ?></h1>
+        </div>
+        <div class="primaryCTAContainer">
+            <a href=<?php echo get_theme_mod('homepage_calltoaction_url');?>>
+                <div class="site-firstletter">
+                    <?php echo get_theme_mod('homepage_calltoaction_title');?>
+                </div>
+            </a>
+        </div>
     </div>
 
 
 
 <div id="content" class="site-content">
-
-
-
-
-
-
 
 
 
@@ -113,14 +109,6 @@
 
             <?php dynamic_sidebar( 'newsWidgetArea' ); ?>
 
-            <img class="mastHeadImage" src=<?php echo get_theme_mod('homepage_masthead_image');?>>
-            <div class="secondaryCTAContainer">
-                <a href=<?php echo get_theme_mod('homepage_calltoaction_url');?>>
-                    <div class="site-firstletter">
-                        <?php echo get_theme_mod('homepage_calltoaction_title');?>
-                    </div>
-                </a>
-            </div>
 
             <?php dynamic_sidebar( 'peopleWidgetArea' ); ?>
 

@@ -78,7 +78,7 @@ function bro_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_setting('homepage_calltoaction_url', array(
-        'default' => 'http://www.google.com',
+        'default' => '',
         'type' => 'theme_mod',
         'transport' => 'postMessage'
     ));
