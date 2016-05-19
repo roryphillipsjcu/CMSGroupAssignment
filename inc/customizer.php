@@ -52,13 +52,13 @@ function bro_customize_register( $wp_customize ) {
     // --- CALL TO ACTION SETTINGS ---
 
     $wp_customize->add_setting('calltoaction_text', array(
-        'default' => 'Book Now',
+        'default' => '',
         'type' => 'theme_mod',
         'transport' => 'postMessage'
     ));
 
     $wp_customize->add_setting('calltoaction_url', array(
-        'default' => 'https://whatson.townsville.qld.gov.au/categories/ticketshop',
+        'default' => '',
         'type' => 'theme_mod',
         'transport' => 'postMessage'
     ));
@@ -84,19 +84,19 @@ function bro_customize_register( $wp_customize ) {
     ));
 
     $wp_customize->add_setting('homepage_aboutsection_title', array(
-        'default' => 'About Us',
+        'default' => '',
         'type' => 'theme_mod',
         'transport' => 'postMessage'
     ));
 
     $wp_customize->add_setting('homepage_aboutsection_description', array(
-        'default' => 'blahblahblah',
+        'default' => '',
         'type' => 'theme_mod',
         'transport' => 'postMessage'
     ));
 
     $wp_customize->add_setting('homepage_news_title', array(
-        'default' => 'News',
+        'default' => '',
         'type' => 'theme_mod',
         'transport' => 'postMessage'
     ));
